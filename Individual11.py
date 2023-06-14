@@ -105,17 +105,7 @@ if variable != 'HeartDisease':
     st.plotly_chart(fig_treemap)
 
 
-# Generate correlation matrix
-correlation_matrix = df.corr()
 
-# Set up the figure and axes
-fig, ax = plt.subplots(figsize=(20, 15))
-
-# Plot the correlation matrix heatmap
-sns.heatmap(correlation_matrix, annot=True, cbar=False, cmap='RdBu', ax=ax)
-
-# Adjust the size of the heatmap on the Streamlit page
-st.pyplot(fig)
 def prevention_section():
     st.title("Prevention Measures")
     st.write("Preventing heart disease is crucial for maintaining a healthy lifestyle. Heart disease is a leading cause of death worldwide, and it is often preventable through simple lifestyle modifications. Regular exercise, proper nutrition, avoiding smoking, managing stress, and getting regular medical check-ups are some of the key preventive measures. By taking proactive steps to prevent heart disease, we can significantly reduce the risk and improve overall heart health.")
