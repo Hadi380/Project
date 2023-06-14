@@ -12,7 +12,7 @@ import seaborn as sns
 import streamlit as st
 import plotly.express as px
 #load the dataset
-df = pd.read_csv(r"C:\Users\hadik\OneDrive\Desktop\MSBA\Summer 2022-2023\Individual Project 2\heart_2020_cleaned.csv")
+df = pd.read_csv("heart_2020_cleaned.csv")
 print(df.head())
 # Rename columns to include spaces
 df = df.rename(columns={
