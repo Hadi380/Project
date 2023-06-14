@@ -127,9 +127,7 @@ st.pyplot(fig)
 def prevention_section():
     st.title("Prevention Measures")
     st.write("Preventing heart disease is crucial for maintaining a healthy lifestyle. Heart disease is a leading cause of death worldwide, and it is often preventable through simple lifestyle modifications. Regular exercise, proper nutrition, avoiding smoking, managing stress, and getting regular medical check-ups are some of the key preventive measures. By taking proactive steps to prevent heart disease, we can significantly reduce the risk and improve overall heart health.")
-    # Display an image related to heart health   # Replace with the URL of your image
-    st.image("image.jpg", caption="Dr. Weill, M.D")
-
+ 
     # Define the prevention measures with statements
     prevention_measures = {
         'Exercise regularly': 'Regular exercise helps maintain a healthy heart.',
