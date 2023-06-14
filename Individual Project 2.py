@@ -12,7 +12,7 @@ import seaborn as sns
 import streamlit as st
 import plotly.express as px
 
-def main():
+
 #load the dataset
 df = pd.read_csv("heart_2020_cleaned.csv")
 print(df.head())
@@ -51,7 +51,7 @@ quote = "“The problem with heart disease is that the first symptom is often fa
 st.markdown(f"> {quote}")
 # Create a Streamlit app and set the title
 
-
+def main():
 st.title("Heart Disease: A Modern Health Challenge")
 markdown_text = """
 Heart disease is on the rise due to modern factors. Sedentary lifestyles, unhealthy diets, stress, smoking, and excessive alcohol consumption contribute to this trend. To combat heart disease, prioritize physical activity, healthy eating, stress management, and avoiding harmful habits. Let's work together for better heart health.
