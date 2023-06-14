@@ -12,7 +12,7 @@ import seaborn as sns
 import streamlit as st
 import plotly.express as px
 #load the dataset
-df = pd.read_csv(r"C:\Users\hadik\OneDrive\Desktop\MSBA\Summer 2022-2023\Individual Project 2\heart_2020_cleaned.csv")
+df = pd.read_csv("heart_2020_cleaned.csv")
 print(df.head())
 # Rename columns to include spaces
 df = df.rename(columns={
@@ -133,7 +133,7 @@ def prevention_section():
     st.title("Prevention Measures")
     st.write("Preventing heart disease is crucial for maintaining a healthy lifestyle. Heart disease is a leading cause of death worldwide, and it is often preventable through simple lifestyle modifications. Regular exercise, proper nutrition, avoiding smoking, managing stress, and getting regular medical check-ups are some of the key preventive measures. By taking proactive steps to prevent heart disease, we can significantly reduce the risk and improve overall heart health.")
     # Display an image related to heart health
-    image_url = "https://www.drweil.com/wp-content/uploads/2016/12/health-wellness_body-mind-spirit_heart_a-natural-way-to-lower-cholesterol_2731x1800_78203849.jpg"  # Replace with the URL of your image
+    image_url = "image.jpg"  # Replace with the URL of your image
     st.image(image_url, caption="Dr. Weill, M.D")
 
     # Define the prevention measures with statements
