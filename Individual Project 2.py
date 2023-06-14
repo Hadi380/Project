@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 import plotly.express as px
+
+def main():
 #load the dataset
 df = pd.read_csv("heart_2020_cleaned.csv")
 print(df.head())
@@ -171,3 +173,6 @@ def prevention_section():
         st.write(prevention_measures[selected_measure])
 # Display content for the 'Prevention' section
 prevention_section()
+
+if __name__ == '__main__':
+    main()
